@@ -41,6 +41,8 @@ public class ObjectCountJSONHandler extends IntentService implements IJSONHandle
         if (mIsConnected)
         {
 
+            System.out.println("asdf");
+
             try
             {
                 InputStream inputStream;
