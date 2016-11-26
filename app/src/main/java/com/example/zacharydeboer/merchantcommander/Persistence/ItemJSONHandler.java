@@ -4,6 +4,7 @@ package com.example.zacharydeboer.merchantcommander.Persistence;
 import android.app.IntentService;
 import android.content.Intent;
 import android.os.Parcel;
+import android.util.Log;
 
 import com.example.zacharydeboer.merchantcommander.MainActivity;
 import com.example.zacharydeboer.merchantcommander.Model.Item;
@@ -104,7 +105,7 @@ public class ItemJSONHandler extends IntentService implements IJSONHandler
             }
             else
             {
-                // TODO: 2016-11-16 Implement error catch, no connection
+                Log.e("ItemJSONHandler", "No Connection");
             }
 
         }
